@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Víctor Jara</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: linear-gradient(135deg, #8B4513 0%, #D2691E 50%, #CD853F 100%);
+            color: #fff;
+            padding: 40px 0 20px 0;
+            text-align: center;
+        }
+        h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+        }
+        h2 {
+            color: #8B4513;
+            margin-top: 30px;
+        }
+        nav {
+            background: #fff;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav button {
+            background: none;
+            border: none;
+            color: #8B4513;
+            font-size: 1.1em;
+            margin: 0 15px;
+            padding: 8px 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background 0.2s, color 0.2s;
+        }
+        nav button:hover {
+            background: #D2691E;
+            color: #fff;
+        }
+        section, .section-bg {
+            background: #fff;
+            margin: 30px auto;
+            padding: 30px 20px;
+            border-radius: 12px;
+            max-width: 900px;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+        }
+        .card-hover {
+            background: #FAEBD7;
+            border-radius: 10px;
+            padding: 18px;
+            margin-bottom: 18px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .card-hover:hover {
+            transform: translateY(-4px) scale(1.02);
+            box-shadow: 0 8px 24px rgba(0,0,0,0.13);
+        }
+        .footer {
+            background: #8B4513;
+            color: #fff;
+            text-align: center;
+            padding: 30px 0 10px 0;
+            border-radius: 0 0 12px 12px;
+            margin-top: 40px;
+        }
+        .footer p {
+            margin: 8px 0;
+        }
+        .important {
+            color: #D2691E;
+            font-weight: bold;
+        }
+        .italic {
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="hero-bg text-white py-20">
+        <div class="container mx-auto px-6 text-center">
+            <div class="guitar-animation inline-block mb-6">
+                <svg width="80" height="80" viewBox="0 0 100 100" fill="currentColor">
+                    <path d="M30 20 Q35 15 40 20 L60 40 Q65 45 60 50 L40 70 Q35 75 30 70 L10 50 Q5 45 10 40 Z"/>
+                    <circle cx="35" cy="35" r="3"/>
+                    <circle cx="45" cy="45" r="3"/>
+                    <circle cx="35" cy="55" r="3"/>
+                    <path d="M60 40 L85 15 Q90 10 95 15 Q90 20 85 25 L60 50" stroke="currentColor" stroke-width="2" fill="none"/>
+                </svg>
+            </div>
+            <h1 class="text-5xl md:text-7xl font-bold mb-4">Víctor Jara</h1>
+            <p class="text-xl md:text-2xl mb-8 italic">"El derecho de vivir en paz"</p>
+            <p class="text-lg max-w-3xl mx-auto">Cantautor, director teatral y símbolo eterno de la resistencia y la justicia social</p>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="container mx-auto px-6">
+            <div class="flex justify-center space-x-8 py-4">
+                <button onclick="scrollToSection('vida')" class="text-gray-700 hover:text-orange-600 font-semibold transition-colors">Vida</button>
+                <button onclick="scrollToSection('discografia')" class="text-gray-700 hover:text-orange-600 font-semibold transition-colors">Discografía</button>
+                <button onclick="scrollToSection('canciones')" class="text-gray-700 hover:text-orange-600 font-semibold transition-colors">Canciones</button>
+                <button onclick="scrollToSection('muerte')" class="text-gray-700 hover:text-orange-600 font-semibold transition-colors">Muerte</button>
+                <button onclick="scrollToSection('legado')" class="text-gray-700 hover:text-orange-600 font-semibold transition-colors">Legado</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Vida Section -->
+    <section id="vida" class="py-16 section-bg">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-12 text-gray-800">Su Vida</h2>
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="fade-in">
+                    <div class="bg-orange-100 p-8 rounded-lg">
+                        <h3 class="text-2xl font-bold mb-4 text-orange-800">Primeros Años</h3>
+                        <p class="text-gray-700 mb-4"><strong>Nacimiento:</strong> 28 de septiembre de 1932, San Ignacio, Chile</p>
+                        <p class="text-gray-700 mb-4">Víctor Lidio Jara Martínez nació en una familia campesina humilde. Su madre, Amanda Martínez, era cantora popular y le transmitió el amor por la música folklórica.</p>
+                        <p class="text-gray-700">Desde joven mostró interés por el teatro y la música, estudiando en el Conservatorio Nacional de Música de la Universidad de Chile.</p>
+                    </div>
+                </div>
+                <div class="fade-in">
+                    <div class="bg-white p-8 rounded-lg shadow-lg">
+                        <h3 class="text-2xl font-bold mb-4 text-gray-800">Carrera Artística</h3>
+                        <ul class="space-y-3 text-gray-700">
+                            <li class="flex items-start">
+                                <span class="text-orange-600 mr-2">🎭</span>
+                                <span><strong>Teatro:</strong> Director de la compañía de teatro Quilapayún</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-orange-600 mr-2">🎵</span>
+                                <span><strong>Música:</strong> Pionero de la Nueva Canción Chilena</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-orange-600 mr-2">🎓</span>
+                                <span><strong>Educación:</strong> Profesor en la Universidad de Chile</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-orange-600 mr-2">❤️</span>
+                                <span><strong>Familia:</strong> Casado con Joan Turner, padre de Manuela y Amanda</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Discografía Section -->
+    <section id="discografia" class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-12 text-gray-800">Discografía</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="card-hover bg-gradient-to-br from-orange-50 to-orange-100 p-6 rounded-lg shadow-lg fade-in">
+                    <div class="text-4xl mb-4">🎵</div>
+                    <h3 class="text-xl font-bold mb-2 text-orange-800">Víctor Jara (1967)</h3>
+                    <p class="text-gray-700 mb-4">Su primer álbum solista, incluyendo "Deja la vida volar" y "El cigarrito".</p>
+                    <div class="text-sm text-gray-600">
+                        <p><strong>Sello:</strong> Demon</p>
+                        <p><strong>Año:</strong> 1967</p>
+                    </div>
+                </div>
+                
+                <div class="card-hover bg-gradient-to-br from-orange-50 to-orange-100 p-6 rounded-lg shadow-lg fade-in">
+                    <div class="text-4xl mb-4">🌟</div>
+                    <h3 class="text-xl font-bold mb-2 text-orange-800">Pongo en tus manos abiertas (1969)</h3>
+                    <p class="text-gray-700 mb-4">Álbum que consolidó su estilo único, mezclando folklore con compromiso social.</p>
+                    <div class="text-sm text-gray-600">
+                        <p><strong>Sello:</strong> Jota Jota</p>
+                        <p><strong>Año:</strong> 1969</p>
+                    </div>
+                </div>
+                
+                <div class="card-hover bg-gradient-to-br from-orange-50 to-orange-100 p-6 rounded-lg shadow-lg fade-in">
+                    <div class="text-4xl mb-4">✊</div>
+                    <h3 class="text-xl font-bold mb-2 text-orange-800">Canto Libre (1970)</h3>
+                    <p class="text-gray-700 mb-4">Obra maestra que incluye "Te Recuerdo Amanda" y "El derecho de vivir en paz".</p>
+                    <div class="text-sm text-gray-600">
+                        <p><strong>Sello:</strong> Jota Jota</p>
+                        <p><strong>Año:</strong> 1970</p>
+                    </div>
+                </div>
+                
+                <div class="card-hover bg-gradient-to-br from-orange-50 to-orange-100 p-6 rounded-lg shadow-lg fade-in">
+                    <div class="text-4xl mb-4">🎭</div>
+                    <h3 class="text-xl font-bold mb-2 text-orange-800">El derecho de vivir en paz (1971)</h3>
+                    <p class="text-gray-700 mb-4">Álbum emblemático con su canción más conocida internacionalmente.</p>
+                    <div class="text-sm text-gray-600">
+                        <p><strong>Sello:</strong> Jota Jota</p>
+                        <p><strong>Año:</strong> 1971</p>
+                    </div>
+                </div>
+                
+                <div class="card-hover bg-gradient-to-br from-orange-50 to-orange-100 p-6 rounded-lg shadow-lg fade-in">
+                    <div class="text-4xl mb-4">🌅</div>
+                    <h3 class="text-xl font-bold mb-2 text-orange-800">La Población (1972)</h3>
+                    <p class="text-gray-700 mb-4">Retrato musical de la vida en los barrios populares de Chile.</p>
+                    <div class="text-sm text-gray-600">
+                        <p><strong>Sello:</strong> Jota Jota</p>
+                        <p><strong>Año:</strong> 1972</p>
+                    </div>
+                </div>
+                
+                <div class="card-hover bg-gradient-to-br from-orange-50 to-orange-100 p-6 rounded-lg shadow-lg fade-in">
+                    <div class="text-4xl mb-4">💔</div>
+                    <h3 class="text-xl font-bold mb-2 text-orange-800">Manifiesto (1974)</h3>
+                    <p class="text-gray-700 mb-4">Álbum póstumo que incluye sus últimas composiciones y "Manifiesto".</p>
+                    <div class="text-sm text-gray-600">
+                        <p><strong>Sello:</strong> Jota Jota</p>
+                        <p><strong>Año:</strong> 1974 (póstumo)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Canciones Más Relevantes -->
+    <section id="canciones" class="py-16 section-bg">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-12 text-gray-800">Su Repertorio Musical</h2>
+            
+            <!-- Canciones Más Emblemáticas -->
+            <div class="mb-16">
+                <h3 class="text-3xl font-bold text-center mb-8 text-orange-800">Canciones Más Emblemáticas</h3>
+                <div class="max-w-5xl mx-auto space-y-6">
+                    <div class="bg-white p-6 rounded-lg shadow-lg card-hover fade-in">
+                        <div class="flex items-start space-x-4">
+                            <div class="text-3xl">🕊️</div>
+                            <div class="flex-1">
+                                <h4 class="text-xl font-bold mb-2 text-orange-800">El derecho de vivir en paz</h4>
+                                <p class="text-gray-700 mb-2"><strong>Año:</strong> 1971 | <strong>Álbum:</strong> El derecho de vivir en paz</p>
+                                <p class="text-gray-700 mb-3">Su canción más emblemática, un himno contra la guerra de Vietnam y por la paz mundial. Dedicada al líder vietnamita Ho Chi Minh, se convirtió en símbolo de resistencia en toda Latinoamérica y fue adoptada por movimientos pacifistas internacionales.</p>
+                                <div class="bg-orange-50 p-3 rounded italic text-gray-600 mb-3">
+                                    "El derecho de vivir, poeta Ho Chi Minh, que golpea desde Vietnam a toda la humanidad..."
+                                </div>
+                                <div class="text-sm text-gray-500 italic">
+                                    Buscar en plataformas musicales
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white p-6 rounded-lg shadow-lg card-hover fade-in">
+                        <div class="flex items-start space-x-4">
+                            <div class="text-3xl">💕</div>
+                            <div class="flex-1">
+                                <h4 class="text-xl font-bold mb-2 text-orange-800">Te Recuerdo Amanda</h4>
+                                <p class="text-gray-700 mb-2"><strong>Año:</strong> 1969 | <strong>Álbum:</strong> Pongo en tus manos abiertas</p>
+                                <p class="text-gray-700 mb-3">Balada que narra la historia de amor entre Amanda y Manuel, interrumpida por la muerte del joven en un accidente laboral. Inspirada en hechos reales, retrata la dura realidad de la clase trabajadora chilena y se ha convertido en una de las canciones de amor más reconocidas de Latinoamérica.</p>
+                                <div class="bg-orange-50 p-3 rounded italic text-gray-600 mb-3">
+                                    "Te recuerdo Amanda, la calle mojada, corriendo a la fábrica donde trabajaba Manuel..."
+                                </div>
+                                <div class="text-sm text-gray-500 italic">
+                                    Buscar en plataformas musicales
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white p-6 rounded-lg shadow-lg card-hover fade-in">
+                        <div class="flex items-start space-x-4">
+                            <div class="text-3xl">✊</div>
+                            <div class="flex-1">
+                                <h4 class="text-xl font-bold mb-2 text-orange-800">Manifiesto</h4>
+                                <p class="text-gray-700 mb-2"><strong>Año:</strong> 1973 | <strong>Álbum:</strong> Manifiesto (póstumo)</p>
+                                <p class="text-gray-700 mb-3">Declaración artística y política donde expresa su compromiso con los oprimidos y su visión del arte como herramienta de transformación social. Considerada su testamento artístico, define la filosofía de la Nueva Canción Chilena y el rol del artista comprometido.</p>
+                                <div class="bg-orange-50 p-3 rounded italic text-gray-600 mb-3">
+                                    "Yo no canto por cantar ni por tener buena voz, canto porque la guitarra tiene sentido y razón..."
+                                </div>
+                                <div class="text-sm text-gray-500 italic">
+                                    Buscar en plataformas musicales
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Canciones de Amor y Vida Cotidiana -->
+            <div class="mb-16">
+                <h3 class="text-3xl font-bold text-center mb-8 text-orange-800">Canciones de Amor y Vida Cotidiana</h3>
+                <div class="grid md:grid-cols-2 gap-6 max-w-6xl mx-auto">
+                    <div class="bg-white p-6 rounded-lg shadow-lg card-hover fade-in">
+                        <div class="flex items-start space-x-3">
+                            <div class="text-2xl">🌅</div>
+                            <div class="flex-1">
+                                <h4 class="text-lg font-bold mb-2 text-orange-800">Abre la ventana</h4>
+                                <p class="text-gray-700 mb-2 text-sm"><strong>Año:</strong> 1969</p>
+                                <p class="text-gray-700 mb-3 text-sm">Canción de amor y esperanza que invita a abrir el corazón y la mente a nuevas posibilidades.</p>
+                                <div class="bg-orange-50 p-2 rounded italic text-gray-600 text-sm mb-3">
+                                    "Abre la ventana y déjame que entre el aire de la mañana..."
+                                </div>
+                                <div class="text-sm text-gray-500 italic">
+                                    Buscar en plataformas musicales
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-lg shadow-lg card-hover fade-in">
+                        <div class="flex items-start space-x-3">
+                            <div class="text-2xl">💃</div>
+                            <div class="flex-1">
+                                <h4 class="text-lg font-bold mb-2 text-orange-800">La beata</h4>
+                                <p class="text-gray-700 mb-2 text-sm"><strong>Año:</strong> 1967</p>
+                                <p class="text-gray-700 mb-3 text-sm">Retrato satírico de la hipocresía religiosa y social, con el humor característico de Víctor Jara.</p>
+                                <div class="bg-orange-50 p-2 rounded italic text-gray-600 text-sm mb-3">
+                                    "La beata se levanta muy temprano, va a misa de seis..."
+                                </div>
+                                <div class="text-sm text-gray-500 italic">
+                                    Buscar en plataformas musicales
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-lg shadow-lg card-hover fade-in">
+                        <div class="flex items-start space-x-3">
+                            <div class="text-2xl">🚬</div>
+                            <div class="flex-1">
+                                <h4 class="text-lg font-bold mb-2 text-orange-800">El cigarrito</h4>
+                                <p class="text-gray-700 mb-2 text-sm"><strong>Año:</strong> 1967</p>
+                                <p class="text-gray-700 mb-3 text-sm">Canción folklórica tradicional reinterpretada por Víctor Jara con su estilo único.</p>
+                                <div class="bg-orange-50 p-2 rounded italic text-gray-600 text-sm mb-3">
+                                    "Ay, qué rico el cigarrito después de comer..."
+                                </div>
+                                <div class="text-sm text-gray-500 italic">
+                                    Buscar en plataformas musicales
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-lg shadow-lg card-hover fade-in">
+                        <div class="flex items-start space-x-3">
+                            <div class="text-2xl">🌙</div>
+                            <div class="flex-1">
+                                <h4 class="text-lg font-bold mb-2 text-orange-800">Deja la vida volar</h4>
+                                <p class="text-gray-700 mb-2 text-sm"><strong>Año:</strong> 1967</p>
+                                <p class="text-gray-700 mb-3 text-sm">Reflexión poética sobre la libertad y el paso del tiempo, con una melodía melancólica.</p>
+                                <div class="bg-orange-50 p-2 rounded italic text-gray-600 text-sm mb-3">
+                                    "Deja la vida volar como paloma al viento..."
+                                </div>
+                                <div class="text-sm text-gray-500 italic">
+                                    Buscar en plataformas musicales
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Canciones de Protesta y Compromiso Social -->
+            <div class="mb-16">
+                <h3 class="text-3xl font-bold text-center mb-8 text-orange-800">Canciones de Protesta y Compromiso Social</h3>
+                <div class="max-w-5xl mx-auto space-y-6">
+                    <div class="bg-white p-6 rounded-lg shadow-lg card-hover fade-in">
+                        <div class="flex items-start space-x-4">
+                            <div class="text-3xl">🏠</div>
+                            <div class="flex-1">
+                                <h4 class="text-xl font-bold mb-2 text-orange-800">La Población</h4>
+                                <p class="text-gray-700 mb-2"><strong>Año:</strong> 1972 | <strong>Álbum:</strong> La Población</p>
+                                <p class="text-gray-700 mb-3">Retrato musical de la vida en los barrios populares, sus luchas y esperanzas cotidianas. Describe con crudeza y ternura la realidad de las familias trabajadoras en las poblaciones de Santiago.</p>
+                                <div class="bg-orange-50 p-3 rounded italic text-gray-600 mb-3">
+                                    "Aquí se vive la vida como se puede vivir, entre cuatro tablas y un techo de latón..."
+                                </div>
+                                <div class="text-sm text-gray-500 italic">
+                                    Buscar en plataformas musicales
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-lg shadow-lg card-hover fade-in">
+                        <div class="flex items-start space-x-4">
+                            <div class="text-3xl">⚒️</div>
+                            <div class="flex-1">
+                                <h4 class="text-xl font-bold mb-2 text-orange-800">Preguntas por Puerto Montt</h4>
+                                <p class="text-gray-700 mb-2"><strong>Año:</strong> 1969 | <strong>Álbum:</strong> Pongo en tus manos abiertas</p>
+                                <p class="text-gray-700 mb-3">Denuncia de la masacre de Puerto Montt de 1969, donde murieron pobladores sin casa. Una de sus canciones más directamente políticas, que cuestiona la violencia estatal contra los más pobres.</p>
+                                <div class="bg-orange-50 p-3 rounded italic text-gray-600 mb-3">
+                                    "Usted debe responder, señor Pérez Zujovic, por qué al pueblo indefenso contestaron con fusil..."
+                                </div>
+                                <div class="text-sm text-gray-500 italic">
+                                    Buscar en plataformas musicales
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-lg shadow-lg card-hover fade-in">
+                        <div class="flex items-start space-x-4">
+                            <div class="text-3xl">🌾</div>
+                            <div class="flex-1">
+                                <h4 class="text-xl font-bold mb-2 text-orange-800">Plegaria a un labrador</h4>
+                                <p class="text-gray-700 mb-2"><strong>Año:</strong> 1969 | <strong>Álbum:</strong> Pongo en tus manos abiertas</p>
+                                <p class="text-gray-700 mb-3">Himno de esperanza dirigido a los campesinos y trabajadores de la tierra. Combina elementos religiosos con un mensaje de justicia social y reforma agraria.</p>
+                                <div class="bg-orange-50 p-3 rounded italic text-gray-600 mb-3">
+                                    "Levántate y mírate las manos para crecer, estréchala a tu hermano porque juntos vamos a andar..."
+                                </div>
+                                <div class="text-sm text-gray-500 italic">
+                                    Buscar en plataformas musicales
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Canciones Folklóricas y Tradicionales -->
+            <div class="mb-16">
+                <h3 class="text-3xl font-bold text-center mb-8 text-orange-800">Reinterpretaciones Folklóricas</h3>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+                    <div class="bg-white p-5 rounded-lg shadow-lg card-hover fade-in">
+                        <div class="text-2xl mb-3 text-center">🎭</div>
+                        <h4 class="text-lg font-bold mb-2 text-orange-800 text-center">El aparecido</h4>
+                        <p class="text-gray-700 mb-2 text-sm text-center"><strong>Año:</strong> 1967</p>
+                        <p class="text-gray-700 mb-3 text-sm">Canción tradicional sobre un amor que regresa del más allá, reinterpretada con la sensibilidad única de Víctor Jara.</p>
+                        <div class="text-center">
+                            <div class="text-sm text-gray-500 italic">
+                                Buscar en plataformas musicales
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white p-5 rounded-lg shadow-lg card-hover fade-in">
+                        <div class="text-2xl mb-3 text-center">🌺</div>
+                        <h4 class="text-lg font-bold mb-2 text-orange-800 text-center">La cocinerita</h4>
+                        <p class="text-gray-700 mb-2 text-sm text-center"><strong>Año:</strong> 1970</p>
+                        <p class="text-gray-700 mb-3 text-sm">Cueca tradicional que Víctor Jara transformó en un retrato tierno de la vida doméstica y el trabajo femenino.</p>
+                        <div class="text-center">
+                            <div class="text-sm text-gray-500 italic">
+                                Buscar en plataformas musicales
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white p-5 rounded-lg shadow-lg card-hover fade-in">
+                        <div class="text-2xl mb-3 text-center">🎪</div>
+                        <h4 class="text-lg font-bold mb-2 text-orange-800 text-center">El carnaval de mi barrio</h4>
+                        <p class="text-gray-700 mb-2 text-sm text-center"><strong>Año:</strong> 1969</p>
+                        <p class="text-gray-700 mb-3 text-sm">Celebración musical de las fiestas populares y la alegría comunitaria en los barrios trabajadores.</p>
+                        <div class="text-center">
+                            <div class="text-sm text-gray-500 italic">
+                                Buscar en plataformas musicales
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white p-5 rounded-lg shadow-lg card-hover fade-in">
+                        <div class="text-2xl mb-3 text-center">🌊</div>
+                        <h4 class="text-lg font-bold mb-2 text-orange-800 text-center">Zamba del riego</h4>
+                        <p class="text-gray-700 mb-2 text-sm text-center"><strong>Año:</strong> 1971</p>
+                        <p class="text-gray-700 mb-3 text-sm">Adaptación de una zamba argentina que habla del trabajo en el campo y la relación con la tierra.</p>
+                        <div class="text-center">
+                            <div class="text-sm text-gray-500 italic">
+                                Buscar en plataformas musicales
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white p-5 rounded-lg shadow-lg card-hover fade-in">
+                        <div class="text-2xl mb-3 text-center">🎸</div>
+                        <h4 class="text-lg font-bold mb-2 text-orange-800 text-center">Angelita Huenumán</h4>
+                        <p class="text-gray-700 mb-2 text-sm text-center"><strong>Año:</strong> 1970</p>
+                        <p class="text-gray-700 mb-3 text-sm">Homenaje a la cultura mapuche a través de la historia de una joven indígena, mezclando folklore chileno con raíces ancestrales.</p>
+                        <div class="text-center">
+                            <div class="text-sm text-gray-500 italic">
+                                Buscar en plataformas musicales
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white p-5 rounded-lg shadow-lg card-hover fade-in">
+                        <div class="text-2xl mb-3 text-center">🌟</div>
+                        <h4 class="text-lg font-bold mb-2 text-orange-800 text-center">Paloma quiero contarte</h4>
+                        <p class="text-gray-700 mb-2 text-sm text-center"><strong>Año:</strong> 1972</p>
+                        <p class="text-gray-700 mb-3 text-sm">Canción de amor con elementos folklóricos, donde la paloma simboliza la libertad y el mensaje de esperanza.</p>
+                        <div class="text-center">
+                            <div class="text-sm text-gray-500 italic">
+                                Buscar en plataformas musicales
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Últimas Composiciones -->
+            <div class="bg-gray-100 p-8 rounded-lg">
+                <h3 class="text-3xl font-bold text-center mb-8 text-gray-800">Últimas Composiciones (1972-1973)</h3>
+                <div class="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+                    <div class="bg-white p-6 rounded-lg shadow-lg card-hover fade-in">
+                        <div class="flex items-start space-x-3">
+                            <div class="text-2xl">💔</div>
+                            <div class="flex-1">
+                                <h4 class="text-lg font-bold mb-2 text-orange-800">Vientos del pueblo</h4>
+                                <p class="text-gray-700 mb-2 text-sm"><strong>Año:</strong> 1973</p>
+                                <p class="text-gray-700 mb-3 text-sm">Basada en el poema de Miguel Hernández, una de sus últimas grabaciones antes del golpe militar.</p>
+                                <div class="text-sm text-gray-500 italic">
+                                    Buscar en plataformas musicales
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-lg shadow-lg card-hover fade-in">
+                        <div class="flex items-start space-x-3">
+                            <div class="text-2xl">🏟️</div>
+                            <div class="flex-1">
+                                <h4 class="text-lg font-bold mb-2 text-orange-800">Estadio Chile</h4>
+                                <p class="text-gray-700 mb-2 text-sm"><strong>Año:</strong> 1973 (poema póstumo)</p>
+                                <p class="text-gray-700 mb-3 text-sm">Su último poema, escrito en el Estadio Chile durante su cautiverio. Testimonio desgarrador de los últimos días.</p>
+                                <div class="text-sm text-gray-500 italic">
+                                    Poema disponible en archivos históricos
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Muerte Section -->
+    <section id="muerte" class="py-16 bg-gray-800 text-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-12">Su Muerte</h2>
+            <div class="max-w-4xl mx-auto">
+                <div class="bg-gray-700 p-8 rounded-lg mb-8 fade-in">
+                    <h3 class="text-2xl font-bold mb-4 text-orange-400">11 de Septiembre de 1973</h3>
+                    <p class="text-gray-300 mb-4">El día del golpe militar de Augusto Pinochet, Víctor Jara se dirigió a la Universidad Técnica del Estado donde trabajaba como profesor. Fue detenido junto a miles de personas y llevado al Estadio Chile (hoy Estadio Víctor Jara).</p>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="bg-gray-700 p-6 rounded-lg fade-in">
+                        <h4 class="text-xl font-bold mb-3 text-orange-400">En el Estadio Chile</h4>
+                        <ul class="space-y-2 text-gray-300">
+                            <li>• Fue torturado brutalmente por los militares</li>
+                            <li>• Le quebraron las manos para que no pudiera tocar guitarra</li>
+                            <li>• Aún así, siguió cantando para dar ánimo a otros prisioneros</li>
+                            <li>• Escribió su último poema "Estadio Chile"</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="bg-gray-700 p-6 rounded-lg fade-in">
+                        <h4 class="text-xl font-bold mb-3 text-orange-400">16 de Septiembre de 1973</h4>
+                        <p class="text-gray-300 mb-3">Víctor Jara fue asesinado a los 40 años. Su cuerpo fue encontrado días después junto a otros ejecutados.</p>
+                        <p class="text-gray-300 italic">"Su muerte se convirtió en símbolo de la represión y la resistencia cultural."</p>
+                    </div>
+                </div>
+                
+                <div class="bg-red-900 p-6 rounded-lg mt-8 fade-in">
+                    <h4 class="text-xl font-bold mb-3 text-white">Último Poema - "Estadio Chile"</h4>
+                    <div class="text-gray-200 italic leading-relaxed">
+                        <p>"Somos cinco mil aquí en esta pequeña parte de la ciudad.<br>
+                        Somos cinco mil. ¿Cuántos seremos en total<br>
+                        en las ciudades y en todo el país?<br>
+                        Solo aquí, diez mil manos que siembran<br>
+                        y hacen andar las fábricas..."</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Legado Section -->
+    <section id="legado" class="py-16 section-bg">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-12 text-gray-800">Su Legado</h2>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+                <div class="bg-white p-6 rounded-lg shadow-lg card-hover fade-in">
+                    <div class="text-4xl mb-4 text-center">🎵</div>
+                    <h3 class="text-xl font-bold mb-3 text-orange-800 text-center">Musical</h3>
+                    <ul class="text-gray-700 space-y-2">
+                        <li>• Pionero de la Nueva Canción Chilena</li>
+                        <li>• Influencia en cantautores latinoamericanos</li>
+                        <li>• Sus canciones siguen siendo interpretadas mundialmente</li>
+                        <li>• Inspiración para movimientos musicales de protesta</li>
+                    </ul>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-lg card-hover fade-in">
+                    <div class="text-4xl mb-4 text-center">🏛️</div>
+                    <h3 class="text-xl font-bold mb-3 text-orange-800 text-center">Institucional</h3>
+                    <ul class="text-gray-700 space-y-2">
+                        <li>• Estadio Chile renombrado como Estadio Víctor Jara</li>
+                        <li>• Fundación Víctor Jara preserva su memoria</li>
+                        <li>• Calles y plazas llevan su nombre</li>
+                        <li>• Documentales y películas sobre su vida</li>
+                    </ul>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-lg card-hover fade-in">
+                    <div class="text-4xl mb-4 text-center">⚖️</div>
+                    <h3 class="text-xl font-bold mb-3 text-orange-800 text-center">Justicia</h3>
+                    <ul class="text-gray-700 space-y-2">
+                        <li>• Símbolo de lucha por los derechos humanos</li>
+                        <li>• Proceso judicial por su asesinato (2012-2018)</li>
+                        <li>• Condena de responsables militares</li>
+                        <li>• Reconocimiento internacional de su caso</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="bg-orange-600 text-white p-8 rounded-lg text-center fade-in">
+                <h3 class="text-2xl font-bold mb-4">Impacto Mundial</h3>
+                <p class="text-lg mb-4">Víctor Jara trasciende fronteras como símbolo universal de resistencia, justicia social y dignidad humana.</p>
+                <div class="grid md:grid-cols-4 gap-4 mt-6">
+                    <div class="bg-orange-700 p-4 rounded">
+                        <div class="text-2xl mb-2">🌍</div>
+                        <p class="font-semibold">Reconocimiento Internacional</p>
+                    </div>
+                    <div class="bg-orange-700 p-4 rounded">
+                        <div class="text-2xl mb-2">🎭</div>
+                        <p class="font-semibold">Influencia Cultural</p>
+                    </div>
+                    <div class="bg-orange-700 p-4 rounded">
+                        <div class="text-2xl mb-2">✊</div>
+                        <p class="font-semibold">Símbolo de Resistencia</p>
+                    </div>
+                    <div class="bg-orange-700 p-4 rounded">
+                        <div class="text-2xl mb-2">❤️</div>
+                        <p class="font-semibold">Memoria Viva</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-6 text-center">
+            <div class="mb-6">
+                <svg width="60" height="60" viewBox="0 0 100 100" fill="currentColor" class="mx-auto mb-4 text-orange-400">
+                    <path d="M30 20 Q35 15 40 20 L60 40 Q65 45 60 50 L40 70 Q35 75 30 70 L10 50 Q5 45 10 40 Z"/>
+                    <circle cx="35" cy="35" r="3"/>
+                    <circle cx="45" cy="45" r="3"/>
+                    <circle cx="35" cy="55" r="3"/>
+                    <path d="M60 40 L85 15 Q90 10 95 15 Q90 20 85 25 L60 50" stroke="currentColor" stroke-width="2" fill="none"/>
+                </svg>
+            </div>
+            <h3 class="text-2xl font-bold mb-4">Víctor Jara</h3>
+            <p class="text-gray-400 mb-4 italic">"Canto que ha sido valiente siempre será canción nueva"</p>
+            <p class="text-gray-400">1932 - 1973 • Su música y mensaje viven para siempre</p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling to sections
+        function scrollToSection(sectionId) {
+            const element = document.getElementById(sectionId);
+            element.scrollIntoView({ 
+                behavior: 'smooth',
+                block: 'start'
+            });
+        }
+
+        // Fade in animation on scroll
+        function handleScrollAnimations() {
+            const elements = document.querySelectorAll('.fade-in');
+            
+            elements.forEach(element => {
+                const elementTop = element.getBoundingClientRect().top;
+                const elementVisible = 150;
+                
+                if (elementTop < window.innerHeight - elementVisible) {
+                    element.classList.add('visible');
+                }
+            });
+        }
+
+        // Initialize animations on scroll
+        window.addEventListener('scroll', handleScrollAnimations);
+        
+        // Run animation check on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            handleScrollAnimations();
+        });
+
+        // Add interactive hover effects to navigation
+        document.querySelectorAll('nav button').forEach(button => {
+            button.addEventListener('mouseenter', function() {
+                this.style.transform = 'translateY(-2px)';
+            });
+            
+            button.addEventListener('mouseleave', function() {
+                this.style.transform = 'translateY(0)';
+            });
+        });
+    </script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'981c8e0f36cbec8d',t:'MTc1ODMyMTMxMy4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
+ega aquí el código exportado de Canva -->
+</body>
+</html>

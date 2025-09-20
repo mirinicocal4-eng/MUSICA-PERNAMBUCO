@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Música Tradicional de Pernambuco - Brasil</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        
+        .dance {
+            animation: dance 2s ease-in-out infinite;
+        }
+        
+        @keyframes dance {
+            0%, 100% { transform: rotate(-5deg); }
+            50% { transform: rotate(5deg); }
+        }
+        
+        .pulse {
+            animation: pulse 1.5s ease-in-out infinite;
+        }
+        
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+        }
+        
+        .float {
+            animation: float 3s ease-in-out infinite;
+        }
+        
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-br from-orange-400 via-red-500 to-purple-600 min-h-screen">
+    
+    <!-- Header -->
+    <header class="bg-black/30 backdrop-blur-lg sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center space-x-4">
+                    <div class="text-5xl dance">🎭</div>
+                    <div>
+                        <h1 class="text-3xl font-bold text-white">Música de Pernambuco</h1>
+                        <p class="text-white/80">Patrimônio Cultural do Nordeste</p>
+                    </div>
+                </div>
+                <nav class="hidden md:flex space-x-6">
+                    <a href="#generos" class="text-white hover:text-yellow-300 transition-colors">Gêneros</a>
+                    <a href="#artistas" class="text-white hover:text-yellow-300 transition-colors">Artistas</a>
+                    <a href="#historia" class="text-white hover:text-yellow-300 transition-colors">História</a>
+                    <a href="#festivales" class="text-white hover:text-yellow-300 transition-colors">Festivais</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="py-20 text-center">
+        <div class="container mx-auto px-6">
+            <h2 class="text-6xl md:text-8xl font-bold mb-8 text-white drop-shadow-2xl">
+                Ritmos da Alma
+            </h2>
+            <p class="text-xl text-white/90 mb-12 max-w-4xl mx-auto">
+                Descubra a vibrante tradição musical de Pernambuco, berço do frevo e maracatu, 
+                onde cada ritmo conta uma história de resistência cultural.
+            </p>
+        </div>
+    </section>
+
+    <!-- Géneros Musicales -->
+    <section id="generos" class="py-20 bg-black/20 backdrop-blur-lg">
+        <div class="container mx-auto px-6">
+            <h3 class="text-5xl font-bold text-center text-white mb-16">Gêneros Tradicionais</h3>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Frevo -->
+                <div class="bg-white/10 backdrop-blur-md rounded-3xl p-8 border border-white/20 hover:bg-white/20 transition-all duration-300">
+                    <div class="text-center mb-6">
+                        <div class="text-7xl mb-4">🎭</div>
+                        <h4 class="text-3xl font-bold text-white mb-2">Frevo</h4>
+                        <p class="text-yellow-300 font-semibold">Patrimônio UNESCO</p>
+                    </div>
+                    <p class="text-white/90 mb-6 leading-relaxed">
+                        Nascido nas ruas do Recife no final do século XIX, o frevo é uma explosiva 
+                        fusão de marcha militar, polca europeia e ritmos africanos. Declarado Patrimônio 
+                        Imaterial da Humanidade pela UNESCO em 2012.
+                    </p>
+                    <div class="space-y-3">
+                        <div class="flex items-center text-white/80">
+                            <span class="text-yellow-400 mr-3">🎺</span>
+                            <span><strong>Instrumentos:</strong> Metais, madeiras, percussão</span>
+                        </div>
+                        <div class="flex items-center text-white/80">
+                            <span class="text-yellow-400 mr-3">📅</span>
+                            <span><strong>Origem:</strong> 1880s - Recife</span>
+                        </div>
+                        <div class="flex items-center text-white/80">
+                            <span class="text-yellow-400 mr-3">💃</span>
+                            <span><strong>Dança:</strong> Passo (passos acrobáticos)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Maracatu -->
+                <div class="bg-white/10 backdrop-blur-md rounded-3xl p-8 border border-white/20 hover:bg-white/20 transition-all duration-300">
+                    <div class="text-center mb-6">
+                        <div class="text-7xl mb-4">👑</div>
+                        <h4 class="text-3xl font-bold text-white mb-2">Maracatu</h4>
+                        <p class="text-purple-300 font-semibold">Patrimônio Cultural</p>
+                    </div>
+                    <p class="text-white/90 mb-6 leading-relaxed">
+                        Manifestação afro-brasileira que recria as coroações dos reis do Congo. 
+                        Patrimônio Imaterial do Brasil desde 2014. Divide-se em Maracatu Nação 
+                        (tradicional) e Maracatu de Baque Virado.
+                    </p>
+                    <div class="space-y-3">
+                        <div class="flex items-center text-white/80">
+                            <span class="text-purple-400 mr-3">🥁</span>
+                            <span><strong>Instrumentos:</strong> Alfaias, gonguês, agbês</span>
+                        </div>
+                        <div class="flex items-center text-white/80">
+                            <span class="text-purple-400 mr-3">🏛️</span>
+                            <span><strong>Origem:</strong> Século XVII</span>
+                        </div>
+                        <div class="flex items-center text-white/80">
+                            <span class="text-purple-400 mr-3">👑</span>
+                            <span><strong>Personagens:</strong> Rei, Rainha, Dama do Paço</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Forró -->
+                <div class="bg-white/10 backdrop-blur-md rounded-3xl p-8 border border-white/20 hover:bg-white/20 transition-all duration-300">
+                    <div class="text-center mb-6">
+                        <div class="text-7xl mb-4">🪗</div>
+                        <h4 class="text-3xl font-bold text-white mb-2">Forró</h4>
+                        <p class="text-orange-300 font-semibold">Alma do Nordeste</p>
+                    </div>
+                    <p class="text-white/90 mb-6 leading-relaxed">
+                        Gênero musical símbolo do Nordeste brasileiro, popularizado por Luiz Gonzaga. 
+                        Engloba baião, xote e arrasta-pé. Representa a resistência cultural nordestina 
+                        e a migração do campo para a cidade.
+                    </p>
+                    <div class="space-y-3">
+                        <div class="flex items-center text-white/80">
+                            <span class="text-orange-400 mr-3">🪗</span>
+                            <span><strong>Trio base:</strong> Sanfona, zabumba, triângulo</span>
+                        </div>
+                        <div class="flex items-center text-white/80">
+                            <span class="text-orange-400 mr-3">💃</span>
+                            <span><strong>Estilos:</strong> Pé-de-serra, universitário</span>
+                        </div>
+                        <div class="flex items-center text-white/80">
+                            <span class="text-orange-400 mr-3">👑</span>
+                            <span><strong>Rei:</strong> Luiz Gonzaga</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Ritmos Afrobrasileños -->
+            <div class="mt-16">
+                <h4 class="text-4xl font-bold text-white mb-12 flex items-center justify-center">
+                    <span class="text-5xl mr-6">🌍</span>
+                    Ritmos Afro-brasileiros
+                </h4>
+                <div class="grid md:grid-cols-2 gap-10">
+                    <!-- Coco -->
+                    <div class="bg-gradient-to-br from-green-500/30 to-emerald-500/30 backdrop-blur-md rounded-3xl p-8 border border-green-300/30 hover:from-green-500/40 hover:to-emerald-500/40 transition-all duration-300">
+                        <div class="text-center mb-6">
+                            <div class="text-7xl mb-4">🥥</div>
+                            <h4 class="text-3xl font-bold text-white mb-2">Coco</h4>
+                            <p class="text-green-300 font-semibold">Tradição Afroindígena</p>
+                        </div>
+                        <p class="text-green-100 mb-6 leading-relaxed">
+                            Manifestação cultural afroindígena caracterizada pelo canto responsorial, 
+                            palmas e dança circular. Originário das comunidades rurais, combina 
+                            elementos africanos com tradições indígenas brasileiras.
+                        </p>
+                        <div class="space-y-3">
+                            <div class="flex items-center text-green-200">
+                                <span class="text-emerald-400 mr-3">👏</span>
+                                <span><strong>Características:</strong> Canto responsorial, palmas rítmicas</span>
+                            </div>
+                            <div class="flex items-center text-green-200">
+                                <span class="text-emerald-400 mr-3">⭕</span>
+                                <span><strong>Formação:</strong> Roda (círculo) de participantes</span>
+                            </div>
+                            <div class="flex items-center text-green-200">
+                                <span class="text-emerald-400 mr-3">🎤</span>
+                                <span><strong>Estilo:</strong> Improvisação e repente</span>
+                            </div>
+                            <div class="flex items-center text-green-200">
+                                <span class="text-emerald-400 mr-3">🌾</span>
+                                <span><strong>Contexto:</strong> Comunidades rurais do interior</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Ciranda -->
+                    <div class="bg-gradient-to-br from-blue-500/30 to-cyan-500/30 backdrop-blur-md rounded-3xl p-8 border border-blue-300/30 hover:from-blue-500/40 hover:to-cyan-500/40 transition-all duration-300">
+                        <div class="text-center mb-6">
+                            <div class="text-7xl mb-4">🌊</div>
+                            <h4 class="text-3xl font-bold text-white mb-2">Ciranda</h4>
+                            <p class="="text-blue-300 font-semibold">Dança das Comunidades Pesqueiras</p>
+                        </div>
+                        <p class="text-blue-100 mb-6 leading-relaxed">
+                            Dança circular tradicional das comunidades pesqueiras de Pernambuco, 
+                            especialmente da Ilha de Itamaracá. Caracterizada por seu ritmo cadenciado 
+                            e a participação coletiva em grandes círculos.
+                        </p>
+                        <div class="space-y-3">
+                            <div class="flex items-center text-blue-200">
+                                <span class="text-cyan-400 mr-3">⭕</span>
+                                <span><strong>Formação:</strong> Grandes círculos de dançarinos</span>
+                            </div>
+                            <div class="flex items-center text-blue-200">
+                                <span class="text-cyan-400 mr-3">🏝️</span>
+                                <span><strong>Origem:</strong> Comunidades pesqueiras de Itamaracá</span>
+                            </div>
+                            <div class="flex items-center text-blue-200">
+                                <span class="text-cyan-400 mr-3">🎵</span>
+                                <span><strong>Ritmo:</strong> Cadenciado e envolvente</span>
+                            </div>
+                            <div class="flex items-center text-blue-200">
+                                <span class="text-cyan-400 mr-3">🌙</span>
+                                <span><strong>Horário:</strong> Tradicionalmente noturna</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Caboclinho y Cavalo Marinho -->
+                <div class="grid md:grid-cols-2 gap-10 mt-10">
+                    <!-- Caboclinho -->
+                    <div class="bg-gradient-to-br from-amber-500/30 to-yellow-500/30 backdrop-blur-md rounded-3xl p-8 border border-amber-300/30 hover:from-amber-500/40 hover:to-yellow-500/40 transition-all duration-300">
+                        <div class="text-center mb-6">
+                            <div class="text-7xl mb-4">🪶</div>
+                            <h4 class="text-3xl font-bold text-white mb-2">Caboclinho</h4>
+                            <p class="text-amber-300 font-semibold">Tradição Indígena-Africana</p>
+                        </div>
+                        <p class="text-amber-100 mb-6 leading-relaxed">
+                            Dança dramática que representa a cultura indígena brasileira, com forte 
+                            influência africana. Os participantes usam penas, arcos e flechas, 
+                            recriando rituais de caça e guerra indígena.
+                        </p>
+                        <div class="space-y-3">
+                            <div class="flex items-center text-amber-200">
+                                <span class="text-yellow-400 mr-3">🪶</span>
+                                <span><strong>Vestuário:</strong> Penas, pinturas corporais</span>
+                            </div>
+                            <div class="flex items-center text-amber-200">
+                                <span class="text-yellow-400 mr-3">🏹</span>
+                                <span><strong>Elementos:</strong> Arcos, flechas, maracás</span>
+                            </div>
+                            <div class="flex items-center text-amber-200">
+                                <span class="text-yellow-400 mr-3">🎭</span>
+                                <span><strong>Representação:</strong> Rituais de caça indígena</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Cavalo Marinho -->
+                    <div class="bg-gradient-to-br from-red-500/30 to-pink-500/30 backdrop-blur-md rounded-3xl p-8 border border-red-300/30 hover:from-red-500/40 hover:to-pink-500/40 transition-all duration-300">
+                        <div class="text-center mb-6">
+                            <div class="text-7xl mb-4">🐎</div>
+                            <h4 class="text-3xl font-bold text-white mb-2">Cavalo Marinho</h4>
+                            <p class="text-red-300 font-semibold">Teatro Popular Nordestino</p>
+                        </div>
+                        <p class="text-red-100 mb-6 leading-relaxed">
+                            Espetáculo de teatro popular que combina música, dança e drama. 
+                            Apresenta mais de 70 personagens diferentes, desde figuras históricas 
+                            até seres fantásticos do folclore nordestino.
+                        </p>
+                        <div class="space-y-3">
+                            <div class="flex items-center text-red-200">
+                                <span class="text-pink-400 mr-3">🎭</span>
+                                <span><strong>Personagens:</strong> 70+ figuras folclóricas</span>
+                            </div>
+                            <div class="flex items-center text-red-200">
+                                <span class="text-pink-400 mr-3">🎪</span>
+                                <span><strong>Formato:</strong> Teatro, música e dança</span>
+                            </div>
+                            <div class="flex items-center text-red-200">
+                                <span class="text-pink-400 mr-3">🌟</span>
+                                <span><strong>Temática:</strong> Folclore e crítica social</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Artistas Destacados -->
+    <section id="artistas" class="py-20">
+        <div class="container mx-auto px-6">
+            <h3 class="text-5xl font-bold text-center text-white mb-16">Artistas Lendários</h3>
+            <div class="grid md:grid-cols-2 gap-12">
+                <!-- Luiz Gonzaga -->
+                <div class="bg-gradient-to-br from-orange-500/30 to-red-500/30 backdrop-blur-md rounded-3xl p-10 border border-orange-300/30">
+                    <div class="flex items-center mb-6">
+                        <div class="text-7xl mr-6">👑</div>
+                        <div>
+                            <h5 class="text-3xl font-bold text-white mb-2">Luiz Gonzaga</h5>
+                            <p class="text-orange-200 text-xl">Rei do Baião</p>
+                            <p class="text-orange-300">(1912-1989) • Exu, PE</p>
+                        </div>
+                    </div>
+                    <p class="text-orange-100 mb-6 leading-relaxed">
+                        Luiz Gonzaga do Nascimento revolucionó la música brasileña levando el forró del sertão a los grandes centros urbanos. Creador del baião moderno, mezcló ritmos nordestinos com arreglos sofisticados.
+                    </p>
+                    <div class="space-y-3">
+                        <div class="flex items-center text-orange-200">
+                            <span class="text-yellow-400 mr-3">🎵</span>
+                            <span><strong>Sucessos:</strong> "Asa Branca", "Baião", "Xote das Meninas"</span>
+                        </div>
+                        <div class="flex items-center text-orange-200">
+                            <span class="text-yellow-400 mr-3">🏆</span>
+                            <span><strong>Legado:</strong> Popularizó el forró nacionalmente</span>
+                        </div>
+                        <div class="flex items-center text-orange-200">
+                            <span class="text-yellow-400 mr-3">🪗</span>
+                            <span><strong>Instrumento:</strong> Sanfona de 120 bajos</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Chico Science -->
+                <div class="bg-gradient-to-br from-green-500/30 to-teal-500/30 backdrop-blur-md rounded-3xl p-10 border border-green-300/30">
+                    <div class="flex items-center mb-6">
+                        <div class="text-7xl mr-6">🦀</div>
+                        <div>
+                            <h5 class="text-3xl font-bold text-white mb-2">Chico Science</h5>
+                            <p class="text-green-200 text-xl">Criador do Manguebeat</p>
+                            <p class="text-green-300">(1966-1997) • Recife, PE</p>
+                        </div>
+                    </div>
+                    <p class="text-green-100 mb-6 leading-relaxed">
+                        Francisco de Assis França revolucionó la música brasileña creando el Manguebeat, movimento que mezcló maracatu, hip-hop, funk y rock. Transformou Recife em capital cultural mundial nos anos 90.
+                    </p>
+                    <div class="space-y-3">
+                        <div class="flex items-center text-green-200">
+                            <span class="text-yellow-400 mr-3">🎵</span>
+                            <span><strong>Álbuns:</strong> "Da Lama ao Caos", "Afrociberdelia"</span>
+                        </div>
+                        <div class="flex items-center text-green-200">
+                            <span class="text-yellow-400 mr-3">🦀</span>
+                            <span><strong>Movimento:</strong> Manguebeat - fusión revolucionaria</span>
+                        </div>
+                        <div class="flex items-center text-green-200">
+                            <span class="text-yellow-400 mr-3">🌍</span>
+                            <span><strong>Impacto:</strong> Proyectó Recife mundialmente</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Más Artistas Lendários -->
+            <div class="mt-16">
+                <h4 class="text-4xl font-bold text-white mb-12 flex items-center justify-center">
+                    <span class="text-5xl mr-6">🎤</span>
+                    Mais Artistas Lendários
+                </h4>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <!-- Dominguinhos -->
+                    <div class="bg-gradient-to-br from-yellow-500/30 to-orange-500/30 backdrop-blur-md rounded-3xl p-8 border border-yellow-300/30 hover:from-yellow-500/40 hover:to-orange-500/40 transition-all duration-300">
+                        <div class="text-center mb-6">
+                            <div class="text-6xl mb-4">🪗</div>
+                            <h5 class="text-2xl font-bold text-white mb-2">Dominguinhos</h5>
+                            <p class="text-yellow-200">Príncipe do Forró</p>
+                            <p class="text-yellow-300 text-sm">(1941-2013) • Garanhuns, PE</p>
+                        </div>
+                        <p class="text-yellow-100 mb-4 leading-relaxed">
+                            José Domingos de Morais fue el heredero musical de Luiz Gonzaga. Virtuoso de la sanfona, modernizou el forró manteniendo suas raízes tradicionais.
+                        </p>
+                        <div class="space-y-2">
+                            <div class="flex items-center text-yellow-200 text-sm">
+                                <span class="text-orange-400 mr-2">🎵</span>
+                                <span><strong>Sucessos:</strong> "Eu Só Quero um Xodó", "Lamento Sertanejo"</span>
+                            </div>
+                            <div class="flex items-center text-yellow-200 text-sm">
+                                <span class="text-orange-400 mr-2">👑</span>
+                                <span><strong>Legado:</strong> Sucesor de Luiz Gonzaga</span>
+                            </div>
+                            <div class="flex items-center text-yellow-200 text-sm">
+                                <span class="text-orange-400 mr-2">🏆</span>
+                                <span><strong>Prêmios:</strong> Grammy Latino, Ordem do Mérito</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Alceu Valença -->
+                    <div class="bg-gradient-to-br from-red-500/30 to-pink-500/30 backdrop-blur-md rounded-3xl p-8 border border-red-300/30 hover:from-red-500/40 hover:to-pink-500/40 transition-all duration-300">
+                        <div class="text-center mb-6">
+                            <div class="text-6xl mb-4">🎸</div>
+                            <h5 class="text-2xl font-bold text-white mb-2">Alceu Valença</h5>
+                            <p class="text-red-200">Poeta do Rock Nordestino</p>
+                            <p class="text-red-300 text-sm">(1946-) • São Bento do Una, PE</p>
+                        </div>
+                        <p class="text-red-100 mb-4 leading-relaxed">
+                            Revolucionó la música brasileña fusionando forró, frevo y rock. Sus composiciones poéticas y experimentales marcaron generaciones.
+                        </p>
+                        <div class="space-y-2">
+                            <div class="flex items-center text-red-200 text-sm">
+                                <span class="text-pink-400 mr-2">🎵</span>
+                                <span><strong>Sucessos:</strong> "Anunciação", "La Belle de Jour"</span>
+                            </div>
+                            <div class="flex items-center text-red-200 text-sm">
+                                <span class="text-pink-400 mr-2">🎭</span>
+                                <span><strong>Estilo:</strong> Fusión rock-forró-frevo</span>
+                            </div>
+                            <div class="flex items-center text-red-200 text-sm">
+                                <span class="text-pink-400 mr-2">📚</span>
+                                <span><strong>Influência:</strong> Tropicalismo nordestino</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Elba Ramalho -->
+                    <div class="bg-gradient-to-br from-pink-500/30 to-purple-500/30 backdrop-blur-md rounded-3xl p-8 border border-pink-300/30 hover:from-pink-500/40 hover:to-purple-500/40 transition-all duration-300">
+                        <div class="text-center mb-6">
+                            <div class="text-6xl mb-4">👸</div>
+                            <h5 class="text-2xl font-bold text-white mb-2">Elba Ramalho</h5>
+                            <p class="text-pink-200">Rainha do Forró</p>
+                            <p class="text-pink-300 text-sm">(1951-) • Conceição, PB/PE</p>
+                        </div>
+                        <p class="text-pink-100 mb-4 leading-relaxed">
+                            Voz icónica del forró moderno, llevó la música nordestina a todo Brasil. Su interpretación apasionada conquistó el país en los años 80.
+                        </p>
+                        <div class="space-y-2">
+                            <div class="flex items-center text-pink-200 text-sm">
+                                <span class="text-purple-400 mr-2">🎵</span>
+                                <span><strong>Sucessos:</strong> "Chão de Giz", "Banho de Cheiro"</span>
+                            </div>
+                            <div class="flex items-center text-pink-200 text-sm">
+                                <span class="text-purple-400 mr-2">📺</span>
+                                <span><strong>Impacto:</strong> Popularizó el forró nacionalmente</span>
+                            </div>
+                            <div class="flex items-center text-pink-200 text-sm">
+                                <span class="text-purple-400 mr-2">🏆</span>
+                                <span><strong>Carreira:</strong> 40+ años de éxito</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Segunda fila de artistas -->
+                <div class="grid md:grid-cols-4 gap-8 mt-8">
+                    <!-- Geraldo Azevedo -->
+                    <div class="bg-gradient-to-br from-teal-500/30 to-green-500/30 backdrop-blur-md rounded-3xl p-8 border border-teal-300/30 hover:from-teal-500/40 hover:to-green-500/40 transition-all duration-300">
+                        <div class="text-center mb-6">
+                            <div class="text-6xl mb-4">🎼</div>
+                            <h5 class="text-2xl font-bold text-white mb-2">Geraldo Azevedo</h5>
+                            <p class="text-teal-200">Compositor Nordestino</p>
+                            <p class="text-teal-300 text-sm">(1945-) • Petrolina, PE</p>
+                        </div>
+                        <p class="text-teal-100 mb-4 leading-relaxed">
+                            Uno de los mayores compositores del Nordeste. Sus canciones románticas y poéticas marcaron la MPB de los años 70 y 80.
+                        </p>
+                        <div class="space-y-2">
+                            <div class="flex items-center text-teal-200 text-sm">
+                                <span class="text-green-400 mr-2">🎵</span>
+                                <span><strong>Sucessos:</strong> "Táxi Lunar", "Caravana"</span>
+                            </div>
+                            <div class="flex items-center text-teal-200 text-sm">
+                                <span class="text-green-400 mr-2">✍️</span>
+                                <span><strong>Especialidade:</strong> Compositor e intérprete</span>
+                            </div>
+                            <div class="flex items-center text-teal-200 text-sm">
+                                <span class="text-green-400 mr-2">🌟</span>
+                                <span><strong>Estilo:</strong> MPB nordestina romántica</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Fagner -->
+                    <div class="bg-gradient-to-br from-indigo-500/30 to-blue-500/30 backdrop-blur-md rounded-3xl p-8 border border-indigo-300/30 hover:from-indigo-500/40 hover:to-blue-500/40 transition-all duration-300">
+                        <div class="text-center mb-6">
+                            <div class="text-6xl mb-4">🎤</div>
+                            <h5 class="text-2xl font-bold text-white mb-2">Fagner</h5>
+                            <p class="text-indigo-200">Voz do Nordeste</p>
+                            <p class="text-indigo-300 text-sm">(1949-) • Orós, CE/PE</p>
+                        </div>
+                        <p class="text-indigo-100 mb-4 leading-relaxed">
+                            Raimundo Fagner, con su voz única y emotiva, se convirtió en uno de los mayores intérpretes de la música nordestina y brasileña.
+                        </p>
+                        <div class="space-y-2">
+                            <div class="flex items-center text-indigo-200 text-sm">
+                                <span class="text-blue-400 mr-2">🎵</span>
+                                <span><strong>Sucessos:</strong> "Canteiros", "Mucuripe"</span>
+                            </div>
+                            <div class="flex items-center text-indigo-200 text-sm">
+                                <span class="text-blue-400 mr-2">🎭</span>
+                                <span><strong>Característica:</strong> Voz grave e emotiva</span>
+                            </div>
+                            <div class="flex items-center text-indigo-200 text-sm">
+                                <span class="text-blue-400 mr-2">🏆</span>
+                                <span><strong>Reconocimiento:</strong> Ícono de la MPB</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Nação Zumbi -->
+                    <div class="bg-gradient-to-br from-lime-500/30 to-green-500/30 backdrop-blur-md rounded-3xl p-8 border border-lime-300/30 hover:from-lime-500/40 hover:to-green-500/40 transition-all duration-300">
+                        <div class="text-center mb-6">
+                            <div class="text-6xl mb-4">🦀</div>
+                            <h5 class="text-2xl font-bold text-white mb-2">Nação Zumbi</h5>
+                            <p class="text-lime-200">Herdeiros do Manguebeat</p>
+                            <p class="text-lime-300 text-sm">(1991-) • Recife, PE</p>
+                        </div>
+                        <p class="text-lime-100 mb-4 leading-relaxed">
+                            Banda que continuó el legado de Chico Science, manteniendo vivo el movimento Manguebeat com sua fusión de maracatu, rock e hip-hop.
+                        </p>
+                        <div class="space-y-2">
+                            <div class="flex items-center text-lime-200 text-sm">
+                                <span class="text-green-400 mr-2">🎵</span>
+                                <span><strong>Álbuns:</strong> "CSNZ", "Futura"</span>
+                            </div>
+                            <div class="flex items-center text-lime-200 text-sm">
+                                <span class="text-green-400 mr-2">🦀</span>
+                                <span><strong>Movimento:</strong> Manguebeat contemporâneo</span>
+                            </div>
+                            <div class="flex items-center text-lime-200 text-sm">
+                                <span class="text-green-400 mr-2">🌍</span>
+                                <span><strong>Alcance:</strong> Proyección internacional</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Hermeto Pascoal -->
+                    <div class="bg-gradient-to-br from-violet-500/30 to-purple-500/30 backdrop-blur-md rounded-3xl p-8 border border-violet-300/30 hover:from-violet-500/40 hover:to-purple-500/40 transition-all duration-300">
+                        <div class="text-center mb-6">
+                            <div class="text-6xl mb-4">🎹</div>
+                            <h5 class="text-2xl font-bold text-white mb-2">Hermeto Pascoal</h5>
+                            <p class="text-violet-200">Bruxo da Música</p>
+                            <p class="text-violet-300 text-sm">(1936-) • Lagoa da Canoa, AL/PE</p>
+                        </div>
+                        <p class="text-violet-100 mb-4 leading-relaxed">
+                            Genio musical que revolucionó la música brasileña e mundial. Multiinstrumentista virtuoso, compositor experimental e improvisador único.
+                        </p>
+                        <div class="space-y-2">
+                            <div class="flex items-center text-violet-200 text-sm">
+                                <span class="text-purple-400 mr-2">🎼</span>
+                                <span><strong>Álbuns:</strong> "Slaves Mass", "Zabumbê-bum-á"</span>
+                            </div>
+                            <div class="flex items-center text-violet-200 text-sm">
+                                <span class="text-purple-400 mr-2">🎭</span>
+                                <span><strong>Estilo:</strong> Jazz experimental nordestino</span>
+                            </div>
+                            <div class="flex items-center text-violet-200 text-sm">
+                                <span class="text-purple-400 mr-2">🌟</span>
+                                <span><strong>Reconocimiento:</strong> Leyenda viva de la música</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mestres das Tradições Afrobrasileiras -->
+                <div class="mt-16">
+                    <h4 class="text-4xl font-bold text-white mb-12 flex items-center justify-center">
+                        <span class="text-5xl mr-6">👑</span>
+                        Mestres das Tradições Afrobrasileiras
+                    </h4>
+                    <div class="grid md:grid-cols-3 gap-8">
+                        <!-- Lia de Itamaracá -->
+                        <div class="bg-gradient-to-br from-blue-500/30 to-cyan-500/30 backdrop-blur-md rounded-3xl p-8 border border-blue-300/30 hover:from-blue-500/40 hover:to-cyan-500/40 transition-all duration-300">
+                            <div class="text-center mb-6">
+                                <div class="text-6xl mb-4">🌊</div>
+                                <h5 class="text-2xl font-bold text-white mb-2">Lia de Itamaracá</h5>
+                                <p class="text-blue-200">Rainha da Ciranda</p>
+                                <p class="text-blue-300 text-sm">(1944-) • Itamaracá, PE</p>
+                            </div>
+                            <p class="text-blue-100 mb-4 leading-relaxed">
+                                Maria Madalena Correia do Nascimento es la maior representante da ciranda pernambucana. Patrimonio Vivo de Pernambuco, mantém viva esta tradição centenária.
+                            </p>
+                            <div class="space-y-2">
+                                <div class="flex items-center text-blue-200 text-sm">
+                                    <span class="text-cyan-400 mr-2">🏝️</span>
+                                    <span><strong>Origem:</strong> Ilha de Itamaracá</span>
+                                </div>
+                                <div class="flex items-center text-blue-200 text-sm">
+                                    <span class="text-cyan-400 mr-2">👑</span>
+                                    <span><strong>Título:</strong> Patrimonio Vivo de PE</span>
+                                </div>
+                                <div class="flex items-center text-blue-200 text-sm">
+                                    <span class="text-cyan-400 mr-2">⭕</span>
+                                    <span><strong>Tradição:</strong> 60+ anos de ciranda</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Mestre Salustiano -->
+                        <div class="bg-gradient-to-br from-green-500/30 to-emerald-500/30 backdrop-blur-md rounded-3xl p-8 border border-green-300/30 hover:from-green-500/40 hover:to-emerald-500/40 transition-all duration-300">
+                            <div class="text-center mb-6">
+                                <div class="text-6xl mb-4">🥥</div>
+                                <h5 class="text-2xl font-bold text-white mb-2">Mestre Salustiano</h5>
+                                <p class="text-green-200">Rei do Coco</p>
+                                <p class="text-green-300 text-sm">(1945-2008) • Olinda, PE</p>
+                            </div>
+                            <p class="text-green-100 mb-4 leading-relaxed">
+                                Salustiano Ferreira da Silva foi o maior mestre do coco de roda pernambucano. Guardião desta tradição afroindígena, formou gerações de coquistas.
+                            </p>
+                            <div class="space-y-2">
+                                <div class="flex items-center text-green-200 text-sm">
+                                    <span class="text-emerald-400 mr-2">👏</span>
+                                    <span><strong>Especialidade:</strong> Coco de roda tradicional</span>
+                                </div>
+                                <div class="flex items-center text-green-200 text-sm">
+                                    <span class="text-emerald-400 mr-2">🎤</span>
+                                    <span><strong>Estilo:</strong> Repentista e cantador</span>
+                                </div>
+                                <div class="flex items-center text-green-200 text-sm">
+                                    <span class="text-emerald-400 mr-2">🏆</span>
+                                    <span><strong>Legado:</strong> Patrimonio Cultural de PE</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Naná Vasconcelos -->
+                        <div class="bg-gradient-to-br from-purple-500/30 to-pink-500/30 backdrop-blur-md rounded-3xl p-8 border border-purple-300/30 hover:from-purple-500/40 hover:to-pink-500/40 transition-all duration-300">
+                            <div class="text-center mb-6">
+                                <div class="text-6xl mb-4">🥁</div>
+                                <h5 class="text-2xl font-bold text-white mb-2">Naná Vasconcelos</h5>
+                                <p class="text-purple-200">Mestre da Percussão</p>
+                                <p class="text-purple-300 text-sm">(1944-2016) • Recife, PE</p>
+                            </div>
+                            <p class="text-purple-100 mb-4 leading-relaxed">
+                                Juvenal de Holanda Vasconcelos foi um dos percusionistas mais inovadores do mundo. Levou os ritmos nordestinos ao jazz internacional.
+                            </p>
+                            <div class="space-y-2">
+                                <div class="flex items-center text-purple-200 text-sm">
+                                    <span class="text-pink-400 mr-2">🌍</span>
+                                    <span><strong>Colaborações:</strong> Pat Metheny, Egberto Gismonti</span>
+                                </div>
+                                <div class="flex items-center text-purple-200 text-sm">
+                                    <span class="text-pink-400 mr-2">🎵</span>
+                                    <span><strong>Instrumento:</strong> Berimbau, percusión múltiple</span>
+                                </div>
+                                <div class="flex items-center text-purple-200 text-sm">
+                                    <span class="text-pink-400 mr-2">🏆</span>
+                                    <span><strong>Reconhecimento:</strong> Grammy mundial</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Historia Musical -->
+    <section id="historia" class="py-20 bg-black/20 backdrop-blur-lg">
+        <div class="container mx-auto px-6">
+            <h3 class="text-5xl font-bold text-center text-white mb-16">História Musical</h3>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white/10 backdrop-blur-md rounded-3xl p-8 border border-white/20">
+                    <div class="text-center mb-6">
+                        <div class="text-6xl mb-4">⛪</div>
+                        <h4 class="text-2xl font-bold text-white mb-2">Período Colonial</h4>
+                        <p class="text-white/70">Séculos XVI-XVIII</p>
+                    </div>
+                    <p class="text-white/90 leading-relaxed">
+                        A chegada de africanos escravizados traz ritmos bantus e sudaneses. 
+                        As Irmandades do Rosário criam os primeiros maracatus.
+                    </p>
+                </div>
+                <div class="bg-white/10 backdrop-blur-md rounded-3xl p-8 border border-white/20">
+                    <div class="text-center mb-6">
+                        <div class="text-6xl mb-4">🎭</div>
+                        <h4 class="text-2xl font-bold text-white mb-2">Século XIX</h4>
+                        <p class="text-white/70">Era Imperial</p>
+                    </div>
+                    <p class="text-white/90 leading-relaxed">
+                        Nascimento do frevo (1880s) nas ruas do Recife. 
+                        Fusão de marchas militares, polcas europeias e ritmos africanos.
+                    </p>
+                </div>
+                <div class="bg-white/10 backdrop-blur-md rounded-3xl p-8 border border-white/20">
+                    <div class="text-center mb-6">
+                        <div class="text-6xl mb-4">🦀</div>
+                        <h4 class="text-2xl font-bold text-white mb-2">Era Manguebeat</h4>
+                        <p class="text-white/70">Anos 1990</p>
+                    </div>
+                    <p class="text-white/90 leading-relaxed">
+                        Chico Science revoluciona a música brasileira misturando maracatu com rock, 
+                        funk e hip-hop. Recife se transforma em referência mundial.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Festivais -->
+    <section id="festivales" class="py-20">
+        <div class="container mx-auto px-6">
+            <h3 class="text-5xl font-bold text-center text-white mb-16">Festivais Tradicionais</h3>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white/10 backdrop-blur-md rounded-3xl p-8 border border-white/20">
+                    <div class="flex items-center mb-6">
+                        <span class="text-5xl mr-4">🎭</span>
+                        <div>
+                            <h4 class="text-xl font-bold text-white">Carnaval do Recife</h4>
+                            <p class="text-white/70">Fevereiro/Março</p>
+                        </div>
+                    </div>
+                    <p class="text-white/90 mb-4 leading-relaxed">
+                        O maior carnaval de rua do mundo. Mais de 2 milhões de participantes, 
+                        frevo e maracatu nas ruas históricas.
+                    </p>
+                    <div class="space-y-2">
+                        <div class="flex items-center text-white/80">
+                            <span class="text-yellow-400 mr-2">🎺</span>
+                            <span>100+ orquestras de frevo</span>
+                        </div>
+                        <div class="flex items-center text-white/80">
+                            <span class="text-purple-400 mr-2">👑</span>
+                            <span>30+ grupos de maracatu</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white/10 backdrop-blur-md rounded-3xl p-8 border border-white/20">
+                    <div class="flex items-center mb-6">
+                        <span class="text-5xl mr-4">🌽</span>
+                        <div>
+                            <h4 class="text-xl font-bold text-white">São João de Caruaru</h4>
+                            <p class="text-white/70">Junho</p>
+                        </div>
+                    </div>
+                    <p class="text-white/90 mb-4 leading-relaxed">
+                        A maior festa junina do mundo segundo o Guinness Book. 
+                        Forró pé-de-serra autêntico e cultura sertaneja pura.
+                    </p>
+                    <div class="space-y-2">
+                        <div class="flex items-center text-white/80">
+                            <span class="text-orange-400 mr-2">🪗</span>
+                            <span>Forró pé-de-serra tradicional</span>
+                        </div>
+                        <div class="flex items-center text-white/80">
+                            <span class="text-red-400 mr-2">💃</span>
+                            <span>Quadrilhas tradicionais</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white/10 backdrop-blur-md rounded-3xl p-8 border border-white/20">
+                    <div class="flex items-center mb-6">
+                        <span class="text-5xl mr-4">🥁</span>
+                        <div>
+                            <h4 class="text-xl font-bold text-white">Noite dos Tambores</h4>
+                            <p class="text-white/70">Segunda de Carnaval</p>
+                        </div>
+                    </div>
+                    <p class="text-white/90 mb-4 leading-relaxed">
+                        Cerimônia sagrada que abre o carnaval. Os Maracatus Nação se reúnem 
+                        para um ritual ancestral de conexão espiritual.
+                    </p>
+                    <div class="space-y-2">
+                        <div class="flex items-center text-white/80">
+                            <span class="text-purple-400 mr-2">👑</span>
+                            <span>Ritual de 300+ anos</span>
+                        </div>
+                        <div class="flex items-center text-white/80">
+                            <span class="text-yellow-400 mr-2">🕯️</span>
+                            <span>Cerimônia espiritual</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Frases Bonitas -->
+    <section class="py-12">
+        <div class="container mx-auto px-6">
+            <div class="bg-white/10 backdrop-blur-md rounded-3xl p-8 border border-white/20 text-center">
+                <p class="text-3xl md:text-4xl font-bold text-white mb-4">“Onde canta um povo, ali está sua alma.”</p>
+                <p class="text-xl text-white/70 mb-2">— Ariano Suassuna</p>
+                <p class="text-2xl text-white/80 mt-8">“Pernambuco não é só um lugar, é um estado de espírito.”</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black/30 backdrop-blur-lg py-12">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center justify-between">
+                <div class="text-center md:text-left mb-4 md:mb-0">
+                    <p class="text-white/80 text-sm">
+                        &copy; 2023 Música Tradicional de Pernambuco. Todos os direitos reservados.
+                    </p>
+                </div>
+                <div class="flex space-x-4">
+                    <a href="#" class="text-white hover:text-yellow-300 transition-colors">Política de Privacidade</a>
+                    <a href="#" class="text-white hover:text-yellow-300 transition-colors">Termos de Serviço</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
